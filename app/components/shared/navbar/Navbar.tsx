@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import { SignedIn, UserButton } from "@clerk/nextjs";
 import React from "react";
 
