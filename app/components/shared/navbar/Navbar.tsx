@@ -21,7 +21,7 @@ const NavBar = () => {
         />
 
         <p className="h2-bold font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:hidden ">
-          Dev <span className="text-primary-500"> Overflow</span>
+          Christian <span className="text-primary-500"> United</span>
         </p>
       </Link>
       <GlobalSearch />
