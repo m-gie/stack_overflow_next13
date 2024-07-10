@@ -1,8 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import { ClerkProvider } from "@clerk/nextjs";
 import React from "react";
+// eslint-disable-next-line camelcase
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from "next";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,21 +33,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider
-      appearance={{
-        elements: {
-          formButtonPrimary: "primary-gradient",
-          footerActionLink: "primary-text-gradient hover:text-primary-500",
-        },
-      }}
-    >
-      <html lang="en">
-        {/* <h1 className="h1-bold">This is a piece of text </h1> */}
-        <body className={`${inter.variable} ${spaceGrostesk.variable}`}>
-          {/* <h1 className="h1-bold">This is a piece of text </h1> */}
-          {children}
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="en">
+      <body className={`${inter.variable} ${spaceGrostesk.variable}`}>
+        <ClerkProvider
+          appearance={{
+            elements: {
+              formButtonPrimary: "primary-gradient",
+              footerActionLink: "primary-text-gradient hover:text-primary-500",
+            },
+          }}
+        >
+
+        </ClerkProvider>
+      </body>
+    </html>
   );
 }
