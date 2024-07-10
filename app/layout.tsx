@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import { ClerkProvider } from "@clerk/nextjs";
 import React from "react";
 // eslint-disable-next-line camelcase
