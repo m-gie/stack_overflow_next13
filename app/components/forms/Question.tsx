@@ -251,3 +251,12 @@ const Question = ({ mongoUserId }: Props) => {
 };
 
 export default Question;
+function createQuestion(arg0: {
+  title: string;
+  content: string;
+  tags: string[];
+  author: any;
+  path: string;
+}) {
+  throw new Error("Function not implemented.");
+}
