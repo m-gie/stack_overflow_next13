@@ -22,7 +22,7 @@ import Image from "next/image";
 import { createQuestion } from "@/lib/actions/question.action";
 import { useRouter, usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { Badge } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const type: any = "create";
 
